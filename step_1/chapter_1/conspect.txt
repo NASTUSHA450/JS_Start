@@ -1,0 +1,18 @@
+\\Удалённый репозиторий коннект:\\
+git init
+git remote add origin (SSH)
+git add .
+git status
+
+git commit -m "New project"
+
+git push
+git push --set-upstream origin master
+git push -u origin master\branch name
+
+0 master
+--------
+1 Dev
+------------ + --
+2
+------------
