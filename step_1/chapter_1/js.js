@@ -37,6 +37,6 @@ let res = num2 + 7;
 console.log(res);
 console.log(typeof res);
 
-
+//Infinity
 let zero = 0;
 console.log(res/zero);
