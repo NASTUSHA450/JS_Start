@@ -96,5 +96,6 @@ console.log(Greetings);
 let number = myObject['age'];
 console.log(number);
 
-let anyAnswer = prompt();
+// alert()-выводит данные prompt()-запрашивает данные
+let anyAnswer = prompt("Enter yourname", "James Bond");
 console.log(anyAnswer);
