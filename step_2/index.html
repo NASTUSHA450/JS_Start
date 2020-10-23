@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict" //lets you write a stricter code
+
+        //---1---
+        // let goodsCount = 2;
+
+        // if(goodsCount>0){
+        //     console.log(`The amount of items ${goodsCount}`);
+        //     document.write(`The amount of items ${goodsCount}`)
+        // }
+        // if(goodsCount === 0){
+        //     console.log(`The cart is empty`);
+        //     document.write(`Cart is empty`);
+        // }
+        //*or else{
+            //console.log(`The cart is empty`);
+        //}
+
+        //---2---(тернарный оператор)
+        // goodsCount>0 ? console.log(`The amount of items ${goodCount}`):console.log(`The cart is empty`);
+        //if the first commads is FALSE the second will do
+        
+        //the other way of writing it:
+        // goodCount > 0
+        //      ? console.log(`The amount of items ${goodCount}`)
+        //      : console.log(`The cart is empty`)
+        // ;
+        
+        // console.log( goodsCount > 0 ? `The amount of items ${goodsCount}`:`The cart is empty`);
+
+        // //---3---(вложенные условия)
+        const good = 'apple';
+        // if(good === 'banana'){
+        //     console.log('banana\'s cost is 50 euros');
+        // }
+        // else if (good === 'mango'){
+        //     console.log('mango\'s cost is 80 euros');
+
+        // }
+        // else if (good === 'apple' || good === 'pear'){
+        //     console.log('apple and pear cost is 50 euros');
+
+        // }
+        // else{
+        //     console.log(`Unknown fruit`);
+        // }
+
+        //---4---перебор и поиск
+        //проверка по оператору 
+        switch(good){
+
+            case 'banana':
+                cobsole.log('banana cost is 10 euros');
+                break;
+            case 'mango':
+                console.log('mango cost is 20 euros');
+                break;
+            case 'apple':
+                console.log('apple and pear cost is 40 euros');
+                break;
+            case 'pear':
+                console.log('apple and pear cost is 40 euros');
+                break;
+            default:
+                console.log(`Unknown fruit`);
+        }
+
+
+         
+
+
+    </script>
+</body>
+</html>
