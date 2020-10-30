@@ -37,7 +37,7 @@
         // console.log( goodsCount > 0 ? `The amount of items ${goodsCount}`:`The cart is empty`);
 
         // //---3---(вложенные условия)
-        const good = 'apple';
+        // const good = 'apple';
         // if(good === 'banana'){
         //     console.log('banana\'s cost is 50 euros');
         // }
@@ -55,8 +55,8 @@
 
         //---4---перебор и поиск
         //проверка по оператору 
-        // switch(good){
-
+        
+        // switch(good){ //three equals check 
         //     case 'banana':
         //         cobsole.log('banana cost is 10 euros');
         //         break;
@@ -72,6 +72,96 @@
         //     default:
         //         console.log(`Unknown fruit`);
         // }
+
+        //---5(функции)---
+        const good = 'apple';
+
+        // function sayPrice(good,anySum){
+        //     let varForThisFunction  = 5;
+        //     console.log('varTemporary =' varForThisFunction);
+            
+        // }
+
+        // function Sum(num1, num2){
+        //     let Summa = num1+num2;
+        //     console.log('Sum ='+ Summa);
+        // }
+
+        // console.log(Sum(2,3));
+
+        // function Sum(num1, num2){
+        //     let Summa = num1+num2;
+        //     console.log('Sum ='+ Summa);
+        // }
+
+        //function declaration    
+            // function sayPrice(good){
+            //     switch(good){ //three equals check 
+            //         case 'banana':
+            //             cobsole.log('banana cost is 10 euros');
+            //             break;
+            //         case 'mango':
+            //             console.log('mango cost is 20 euros');
+            //             break;
+            //         case 'Apple':
+            //         case 'apple':
+            //         case 'pear':
+            //         case 'Pear':
+            //             console.log('apple and pear cost is 40 euros');
+            //             break;
+            //         default:
+            //             console.log(`Unknown fruit`);
+            //     }
+            // }
+            // sayPrice('Mango');
+
+        //function expression
+            // const myFunc = function(){
+            //     console.log('I am function expression');
+            // };
+
+            // myFunc();
+
+        //function return value
+        // function getGoodPrice(good){
+        //         switch(good){ //three equals check 
+        //             case 'banana':
+        //                 return 50;
+        //             case 'mango':
+        //                 return 80;
+        //             case 'Apple':
+        //             case 'apple':
+        //             case 'pear':
+        //             case 'Pear':
+        //                 return 40;
+        //             default:
+        //                 return false;
+        //         }
+        //     }
+            // const mangoPrice = getGoodPrice('mango');
+            // const applePrice = getGoodPrice('apple');
+
+            // console.log(`Mango ${mangoPrice}\n\tApple = ${applePrice}`);
+
+            //Make function
+            // function getPriceByCount(good,count){
+            //     //get price for one product with sayPrice
+            //     const price = getGoodPrice(good);
+            //     if(price === false){
+            //         console.error('Product not found');
+            //         return false;
+            //     }
+            //     return price*count
+            // }
+
+            // console.log(getPriceByCount('mango',3));
+            // console.log(getPriceByCount('apple',2));
+            // console.log(getPriceByCount('pear',1));
+            
+
+
+
+
 
 
          
