@@ -1,0 +1,22 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NASTUSHA450/JS_Start.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NASTUSHA450/JS_Start/issues"
+  },
+  "homepage": "https://github.com/NASTUSHA450/JS_Start#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
