@@ -6,13 +6,21 @@ let app = express();
 
 let port = 3000;
 
-app.listen(3000,function(){
+app.listen(port, function(){
     console.log(`node express work on ${port}`);
 });
 
-//Далее, чтобы запустить первое приложение
-//get - метод обращения 
+//public -имя папки где храниться статика
+app.use(express.static('public'));
 
-app.get('/cat',function(request,response){
-    response.end('<h1>Category</h1> mi mi mi mi');
+//Далее, чтобы запустить первое приложение
+//get - метод обращения, первый параметр url адрес куда идет обратно
+
+app.get('/',function(req,res){
+    res.render('index.html');
 });
+
+app.get('/cat',function(req,res){
+    res.render('category.html');
+});
+
