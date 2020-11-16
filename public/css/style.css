@@ -1,3 +1,182 @@
 *{
     font-family: sans-serif;
 }
+.col div{
+    margin: 0;
+}
+
+.big-container{
+    min-height: 100%;
+}
+
+/* header */
+.head{
+    background-color: rgb(27, 25, 25);
+}
+.brand{
+    display: flex;
+    text-align: center;
+}
+.brand p{
+    color: #ffffff;
+    padding: 10px 0px 0px 10px ;
+    font-size: 20px;
+}
+.logo{
+    width: 20%;
+}
+.sum{
+    display: flex;
+    text-align: center;
+}
+.sum p{
+    margin-top: 10px;
+    color: #ffffff;
+}
+.cart{  
+    color: #ffffff;
+    font-size: 25px;
+    margin: 10px;
+}
+/* nav-bar */
+.menu{
+    background-color: #373733;
+    
+}
+#navbarMenu{
+    display: flex;
+    justify-content: center;
+}
+.nav-link{
+    margin: 0px 10px 0px 10px;
+}
+.nav-link:hover{
+    text-decoration: none;
+    border-bottom: 2px solid #ffffff;
+    color: #ffffff;
+    transition: 0.2s;
+    
+}
+/* products */
+
+
+
+.hover-product{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.hover-product:hover .add-to-cart{
+    display: inline;
+    text-decoration: none;
+}
+.hover-product:hover img{
+    filter: brightness(50%);
+}
+.product{
+    display: block;
+    width: 263px;
+    height: 364px;
+    /* border: 5px dashed violet; */
+    
+}
+
+.product:hover{
+    background-color: white;
+    box-shadow: 0px 5px 8px 0px rgb(0, 0, 0.16);
+    text-decoration: none;
+}
+.product img{
+    width: 263px;
+    height: 279px;
+
+}
+.product-text{
+    height: 85px;
+    padding: 10px
+}
+.product-text p{
+    text-decoration: none;
+    color: #373733;
+}
+.product-text span{
+    color: red;
+}
+
+.flex-center{
+    position: absolute;
+    top: 130px;
+}
+.add-to-cart{
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 5px;
+    display: flex;    
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 20px;
+    text-decoration: none;
+    display: none;
+
+}
+.add-to-cart:hover {
+    text-decoration: none;
+    color: #d4c3c3;
+}
+/* footer */
+footer{
+    height: 66px;
+    background-color: #373733;
+
+}
+.copy-right{
+    color: #ffffff;
+    margin-top: 15px;
+    font-size: 20px;
+}
+.socials {
+    margin-top: 5px;
+    font-size: 20px;
+    padding: 10px;}
+.socials a{
+    color: #ffffff;
+}
+/* PRODUCT-PAGE */
+.prewie{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.prewie img{
+    width: 344px;
+    height: 364px;
+
+}
+.discription{
+    position: fixed;
+    top: 200px;
+    margin-right: 120px;
+    bottom: 66px;
+}
+.btn{
+    background-color: black;
+    border-radius: 0px;
+    margin: 10px;
+    color: #ffffff;
+}
+@media only screen and (max-width:780px){
+    #navbarMenu{
+        display: flex;
+        justify-content: start;
+    }
+    .discription{
+        position: initial;
+        margin-right: 0;
+        margin: 20px 0px 20px 0px;
+    }
+    footer{
+        height: 100px;
+    }
+
+}

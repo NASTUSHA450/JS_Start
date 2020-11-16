@@ -25,6 +25,9 @@ app.set('view engine','pug');
 app.get('/',function(req,res){
     res.render('main');
 });
+//adding bootstrap
+app.use('/bootstrap' , express.static(__dirname + '/node_modules/bootstrap/dist/css/'));
+
 
 
 
