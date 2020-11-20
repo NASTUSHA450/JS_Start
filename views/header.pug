@@ -34,7 +34,37 @@ html
             
         title My shop
     body
-        
+        header.container-fluid
+          .row.head
+            .col-md-10.offset-md-1.d-flex.justify-content-between.align-items-center
+              .brand
+                img.logo(src='img/logo_cruz.svg' alt='company-logo')
+                p BRAND
+              .sum
+                a.cart(href='#')
+                  i.fas.fa-shopping-bag
+                p
+                  | Products: 0
+                  br
+                  |                         Sum: 0
+        .container-fluid
+          .row.menu
+            .col
+              nav.navbar.navbar-expand-md.navbar-dark
+                button.navbar-toggler(data-toggle='collapse' data-target='#navbarMenu')
+                  span.navbar-toggler-icon
+                #navbarMenu.collapse.navbar-collapse
+                  ul.navbar-nav
+                    li.nav-item
+                      a.nav-link(href='#') HOME
+                    li.nav-item
+                      a.nav-link(href='#') MEN
+                    li.nav-item
+                      a.nav-link(href='#') WOMEN
+                    li.nav-item
+                      a.nav-link(href='#') KIDS
+                    li.nav-item
+                      a.nav-link(href='#') FEATURED
 
     
 
