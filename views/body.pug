@@ -1,106 +1,76 @@
 .big-container
-            header.container-fluid
-              .row.head
-                .col-md-10.offset-md-1.d-flex.justify-content-between.align-items-center
-                  .brand
-                    img.logo(src='img/logo_cruz.svg' alt='company-logo')
-                    p BRAND
-                  .sum
-                    a.cart(href='#')
-                      i.fas.fa-shopping-bag
-                    p
-                      | Products: 0
-                      br
-                      |                         Sum: 0
-            .container-fluid
-              .row.menu
-                .col
-                  nav.navbar.navbar-expand-md.navbar-dark
-                    button.navbar-toggler(data-toggle='collapse' data-target='#navbarMenu')
-                      span.navbar-toggler-icon
-                    #navbarMenu.collapse.navbar-collapse
-                      ul.navbar-nav
-                        li.nav-item
-                          a.nav-link(href='#') HOME
-                        li.nav-item
-                          a.nav-link(href='#') MEN
-                        li.nav-item
-                          a.nav-link(href='#') WOMEN
-                        li.nav-item
-                          a.nav-link(href='#') KIDS
-                        li.nav-item
-                          a.nav-link(href='#') FEATURED
-            .container
-              .row
-                .col-md-4.offset-md-4.d-flex.justify-content-center.align-items-center(style='margin-top: 15px;')
-                  h3 Featured Items
-              .row
-                .col-md-6.offset-md-3.d-flex.justify-content-center.align-items-center
-                  p Shop for items based on what we&apos;ve featured this week!
-            .container.products
-              .row
-                .col-xl-3.col-lg-4.col-md-6.d-flex.justify-content-center
-                  .hover-product
-                    a.product(href='product-page.html')
-                      img(src='img/product1.png' alt='')
-                      .product-text
-                        p Ruffles flowy dress
-                        span $49.99
-                        button +Add to cart
-                .col-xl-3.col-lg-4.col-md-6.d-flex.justify-content-center
-                  .hover-product
-                    a.product(href='product-page2.html')
-                      img.img-fluid.w-100(src='img/product-2.png' alt='')
-                      .product-text
-                        p Ruffles flowy dress
-                        span $49.99
-                        button +Add to cart
-                .col-xl-3.col-lg-4.col-md-6.d-flex.justify-content-center
-                  .hover-product
-                    a.product(href='product-page3.html')
-                      img(src='img/product-3.png' alt='')
-                      .product-text
-                        p Ruffles flowy dress
-                        span $49.99
-                        button +Add to cart
-                .col-xl-3.col-lg-4.col-md-6.d-flex.justify-content-center
-                  .hover-product
-                    a.product(href='#')
-                      img(src='img/product1.png' alt='')
-                      .product-text
-                        p Ruffles flowy dress
-                        span $49.99
-                        button +Add to cart
-                .col-xl-3.col-lg-4.col-md-6.d-flex.justify-content-center
-                  .hover-product
-                    a.product(href='#')
-                      img(src='img/product1.png' alt='')
-                      .product-text
-                        p Ruffles flowy dress
-                        span $49.99
-                        button +Add to cart
-                .col-xl-3.col-lg-4.col-md-6.d-flex.justify-content-center
-                  .hover-product
-                    a.product(href='#')
-                      img(src='img/product1.png' alt='')
-                      .product-text
-                        p Ruffles flowy dress
-                        span $49.99
-                        button +Add to cart
-                .col-xl-3.col-lg-4.col-md-6.d-flex.justify-content-center
-                  .hover-product
-                    a.product(href='#')
-                      img(src='img/product1.png' alt='')
-                      .product-text
-                        p Ruffles flowy dress
-                        span $49.99
-                        button +Add to cart
-                .col-xl-3.col-lg-4.col-md-6.d-flex.justify-content-center
-                  .hover-product
-                    a.product(href='#')
-                      img(src='img/product1.png' alt='')
-                      .product-text
-                        p Ruffles flowy dress
-                        span $49.99
-                        button +Add to cart
+            
+  .container
+    .row
+      .col-md-4.offset-md-4.d-flex.justify-content-center.align-items-center(style='margin-top: 15px;')
+        h3 Featured Items
+    .row
+      .col-md-6.offset-md-3.d-flex.justify-content-center.align-items-center
+        p Shop for items based on what we&apos;ve featured this week!
+  .container.products
+    .row
+      .col-xl-3.col-lg-4.col-md-6.d-flex.justify-content-center
+        .hover-product
+          a.product(href='/product')
+            img(src='img/product1.png' alt='')
+            .product-text
+              p Ruffles flowy dress
+              span $49.99
+              button +Add to cart
+      .col-xl-3.col-lg-4.col-md-6.d-flex.justify-content-center
+        .hover-product
+          a.product(href='product-page2.html')
+            img.img-fluid.w-100(src='img/product-2.png' alt='')
+            .product-text
+              p Ruffles flowy dress
+              span $49.99
+              button +Add to cart
+      .col-xl-3.col-lg-4.col-md-6.d-flex.justify-content-center
+        .hover-product
+          a.product(href='product-page3.html')
+            img(src='img/product-3.png' alt='')
+            .product-text
+              p Ruffles flowy dress
+              span $49.99
+              button +Add to cart
+      .col-xl-3.col-lg-4.col-md-6.d-flex.justify-content-center
+        .hover-product
+          a.product(href='#')
+            img(src='img/product1.png' alt='')
+            .product-text
+              p Ruffles flowy dress
+              span $49.99
+              button +Add to cart
+      .col-xl-3.col-lg-4.col-md-6.d-flex.justify-content-center
+        .hover-product
+          a.product(href='#')
+            img(src='img/product1.png' alt='')
+            .product-text
+              p Ruffles flowy dress
+              span $49.99
+              button +Add to cart
+      .col-xl-3.col-lg-4.col-md-6.d-flex.justify-content-center
+        .hover-product
+          a.product(href='#')
+            img(src='img/product1.png' alt='')
+            .product-text
+              p Ruffles flowy dress
+              span $49.99
+              button +Add to cart
+      .col-xl-3.col-lg-4.col-md-6.d-flex.justify-content-center
+        .hover-product
+          a.product(href='#')
+            img(src='img/product1.png' alt='')
+            .product-text
+              p Ruffles flowy dress
+              span $49.99
+              button +Add to cart
+      .col-xl-3.col-lg-4.col-md-6.d-flex.justify-content-center
+        .hover-product
+          a.product(href='#')
+            img(src='img/product1.png' alt='')
+            .product-text
+              p Ruffles flowy dress
+              span $49.99
+              button +Add to cart
 
