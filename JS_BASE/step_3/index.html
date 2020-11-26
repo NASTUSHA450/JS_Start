@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //циклы
+        // let i=0;
+        // while(i<3){
+        //     alert(`while ${i}`);
+        //     i++;
+
+        // }
+
+        // do{
+        //     alert(`while${i}`);
+        //     i++;
+            
+        // }while(i<3);
+
+        //бесконечный цикл for
+        // for(;;){
+        //     alert(`infinity`);
+        // }
+
+        // for(let i = 0; i<3; i++){
+        //     alert(`for ${i}`);
+        // }
+
+        //можно использоват несколько переменных
+        // for(let i=0, b=3; i<3 && b>0;i++,b--){
+        //     alert(`for ${i}`);
+        // }
+
+        //вечные циклы
+        // let i=0;
+        // while(i === 0){
+        //     alert(`This message is intinite`);
+        // }
+        // for(;;){}
+        
+        // break & continue
+        // for(let i = 0;;i++){
+        //     if(i>12){
+        //         break;
+        //     }
+        //     if(i%2 === 1){
+        //         continue;
+        //     }
+        //     alert(i);
+        // }
+
+        //вложенные циклы
+        // for(let a = 0;a<3;a++){
+        //     alert('Запущен внешний цикл, а=' +a);
+        //     for(let b = 0;b<3;b++){
+        //         alert('Запущен внутренний цикл, b=' +b)
+        //         if(b>=1){
+        //             alert('Прерываем внутренний цикл');
+        //             break;
+        //         }
+        //     }
+        // }
+        
+        //пишем куда хотив выскочить (даем имя(in our case - outerLoop))
+        outerLoop:
+        for(let a = 0;a<3;a++){
+            alert('Запущен внешний цикл, а=' +a);
+            for(let b = 0;b<3;b++){
+                alert('Запущен внутренний цикл, b=' +b)
+                if(b>=1){
+                    alert('Прерываем внутренний цикл');
+                    break outerLoop;
+                    // continue outerLoop;(можно и с continue; и с break;)
+                }
+            }
+        }
+
+        
+        
+    </script>
+</body>
+</html>
