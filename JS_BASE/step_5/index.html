@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="test-id">
+        <h1>Text page</h1>
+        <div class="test-class">
+            <p>1 Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <p>2 Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="test-class">
+            <p>3 Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <p>4 Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+    </div>
+    <script>
+        // console.log(window.document);
+        // console.dir(document);
+        // //Через этот документ мы общаемся с тэгами
+
+        //1 Первый вариант найти с ID
+        // console.log(document.getElementById('test-id'));
+        // console.dir(document.getElementById('test-id'));
+
+       //2 Второй вариант по классу
+    //    console.dir(document.getElementByClass('test-class'));
+    //    console.dir(document.getElementsByClassName('test-class')[0]);
+    
+    //3 По имени тэга
+    // console.dir(document.getElementsByTagName('h1'));
+    
+    //4 по селектору. Указываем селектор как в css
+    //Выбран будет первый если применят quarySrlector - работает только для одного элемента
+    // console.log(document.querySelector('.test-class'));
+    // console.log(document.querySelector('.test-id'));
+    // console.log(document.querySelector('.test-class:nth-child(2)'));
+    
+    //Несколько элементов
+    // console.log(document.querySelectorAll('p')[2]);
+    
+    //После того как нашли, можем менять 
+    // const pTag = document.querySelectorAll('p');
+    //Переберем и выведем
+    // for(let i=0;i<pTag.length;i++){
+    //     console.log(pTag[1]);
+    // }
+    // for(const tag of pTag){
+    //     console.log(tag);
+    // }
+
+    //Меняем текст...
+    // const h1Tag = document.querySelector('h1');
+    // console.log(h1Tag.textContent);
+    // h1Tag.textContent = h1Tag.textContent+'!';
+    // //способ проще
+    // h1Tag.textContent+='!';
+
+    //setTimeout() - откладывает выполнение определенной функции
+    // на определенное время и выполняет это один раз
+    // const h1Tag = document.querySelector('h1');
+    // console.log(h1Tag.textContent);
+    // setTimeout(() => h1Tag.textContent +='!',2000);
+
+    //setInterval()
+    // const h1Tag = document.querySelector('h1');
+    // console.log(h1Tag.textContent);
+    // setInterval(() => h1Tag.textContent +='!',2000);//милисекунды
+
+    //innerHTML
+    const h1Tag = document.querySelector('h1');
+    console.log(h1Tag.textContent);
+    //вставляем текс
+    // h1Tag.textContent = h1Tag.textContent+'!<span>Hello<span>';
+    //вставляем элемент.код
+    h1Tag.innerHTML+='!<span>Hello<span>';
+
+    
+
+
+
+    </script>
+    
+</body>
+</html>

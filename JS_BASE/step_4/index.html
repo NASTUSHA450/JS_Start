@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //объект как хранилище данных
+        // const obj = new Object();
+        //Второй способ:
+        // const obj = {};
+        //Это похоже на массив, но ключи пишем сами и подставляем туда значение
+        // const myCar = {
+        //     manufacturer: 'BMW',
+        //     color: 'black',
+        //     //когда ключи состоят из двух слов: 
+        //     'back seat': 'velour',
+        // }
+        // let prop = [];
+        // for(const key in myCar){
+        //     // console.log(`${key}`);
+        //     prop.push(key)
+        //     console.log(prop);
+        // }
+        // //Если знаем, чтополучить, то через точку
+        // console.log(myCar.manufacturer);
+        // //Если не знаем, то через квадратные скобки
+        // console.log(myCar[prop[1]]);
+
+        // //Используем [] когда ключи состаят из двух слов
+        // console.log(myCar['back seat']);
+
+        //----2---
+        //Меняем свойства
+        // myCar.color = 'green';
+        // myCar['back seat'] = 'leather';
+        // //Попробуем получить свойство которого нет
+        // console.log(myCar.weight);
+        // //После добавим его
+        // myCar.weight = 2000;
+
+        //---3---Добавление функций
+        // function toBeep(){
+        //     console.log('The car is beeping')
+        // }
+        // const myCar = {
+        //     manufacturer: 'BMW',
+        //     color: 'black',
+        //     // beep:function(){
+        //     //     console.log('The car is beeping');
+        //     // }
+        //     //es6 style:
+        //     beep(){
+        //         console.log('The car is beeping')
+        //     }
+        //     // beep:toBeep
+        // }
+
+        //---4---Массивы и объекты
+        const myCar = {
+            manufacturer: 'BMW',
+            color: 'black',
+            possibleColors:['black','yellow','green','silver'],
+            engine:{
+                egineCode:'BSB',
+                power: 350,
+            },
+            beep(){
+                console.log('This car is beeping')
+            },
+            //Функция генератор
+            [Symbol.iterator]: function * (){
+                yield 'Hello';
+                for(const prop in myCar) yield myCar[prop];
+            }
+
+        }
+        //Перебор цветов
+        // for(let i=0;i<myCar.possibleColors.lengh;i++){
+        //     console.log(`Possible colorof the car ${i}`)
+        // }
+        // let colors = myCar.possibleColors
+        // for(let i=0;i<colors.lengh;i++){
+        //     console.log(`Possible colorof the car ${i}`)
+        // }
+
+        // myCar.possibleColors.forEach(elem=>console.log(`Possible color for the car ${elem}`));
+
+        //Получение ключа объекта engine который лежит в объекте myCar
+        // console.log(myCar.engibe.power);
+        // //or
+        // console.log(myCar['engine']['power']);
+        
+        //Перебор свойств(ключей или индексов)
+        // for(const prop in myCar){
+        //     console.log(`Ключт: ${prop}`);
+        // }
+        // let prop = Object.keys(myCar);    
+        // console.log(prop);
+
+        //for of - может работать только если у объекта есть сво-во iterable
+        for(const prop of myCar){
+            console.log(`Ключи:${}`)
+        }
+    </script>
+</body>
+</html>

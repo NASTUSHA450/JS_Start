@@ -107,15 +107,9 @@
 .product-text button{
     margin-left: 89px;
     border: none;
-    background-color: none;
-    color: #f00;
-}
-.product-text button:hover{
     background-color: #ff4040;
     color: #ffffff;
-    transition: 0.3s;
 }
-
 .flex-center{
     position: absolute;
     top: 130px;
@@ -172,7 +166,8 @@ footer{
 }
 .btn{
     margin: 10px;
-    color: red !important; 
+    background-color: #ff4040 !important; 
+    color: #ffffff !important; 
 }
 .btn:hover{
     background-color: #ff4040 !important;

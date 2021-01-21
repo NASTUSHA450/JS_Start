@@ -7,7 +7,7 @@
 </head>
 <body>
     <script>
-        //циклы
+        //---циклы---
         // let i=0;
         // while(i<3){
         //     alert(`while ${i}`);
@@ -66,18 +66,122 @@
         // }
         
         //пишем куда хотив выскочить (даем имя(in our case - outerLoop))
-        outerLoop:
-        for(let a = 0;a<3;a++){
-            alert('Запущен внешний цикл, а=' +a);
-            for(let b = 0;b<3;b++){
-                alert('Запущен внутренний цикл, b=' +b)
-                if(b>=1){
-                    alert('Прерываем внутренний цикл');
-                    break outerLoop;
-                    // continue outerLoop;(можно и с continue; и с break;)
-                }
-            }
-        }
+        // outerLoop:
+        // for(let a = 0;a<3;a++){
+        //     alert('Запущен внешний цикл, а=' +a);
+        //     for(let b = 0;b<3;b++){
+        //         alert('Запущен внутренний цикл, b=' +b)
+        //         if(b>=1){
+        //             alert('Прерываем внутренний цикл');
+        //             break outerLoop;
+        //             // continue outerLoop;(можно и с continue; и с break;)
+        //         }
+        //     }
+        // }
+
+        //---array(массивы)---
+        //1
+        // let a = 'line1';
+        // let b = 'line2';
+        // let c = 'line3';
+        //     //---0---1---2
+        // let arr = ['line1','line2','line3'];
+
+        // console.log(arr[2]);
+        // console.log(arr[0]);
+
+        // //2
+        // let arr2 = new Array(10);
+        // console.log(arr.length);
+        // console.log(arr2.length);
+
+        //Массивы могутхранить любые значения, понимать как односвязный спиков.
+
+        // let b = [5, true, 'line', 3.14];
+        // console.log(b);
+        // console.log(b.length);
+
+        //Двумерные массивы
+        // let arr = [
+        //     [1,5,'Hello'false],
+        //     [55,true,3.14],
+        //     [true,'row',56,5]
+        // ];
+        // console.log(arr[1][1]);
+
+        //Перебор массив
+        // let b = [5, true, 'line', 3.14];
+        // for(let i = 0; i<b.length; i++){
+        //     console.log(`Под индексом ${i} хранится ${b,i}`);
+        // }
+
+        //for in - перебирает все свойства(индексы или ключи) в массиве
+        // let arr = [5, true, 'line', 3.14];
+        // for(let key in arr){
+        //     console.log(`${key}`);
+        // }
+
+        //for of - перебирает значения
+        // let arr = [5, true, 'line', 3.14];
+        // for(let val of arr){
+        //     console.log(`${val}`);
+        // }
+
+        //Какой цикл применить?
+        //for(let i=0; i<3; i++) с цисловыми значениями - когда нужны и индекс и значение
+        //for in - применяется в лсновном для объектов
+        //for of - когда индекс не нужен, только значения
+
+        //Удаление, добавление и методы для работы с массивом
+
+        //Добавление в конец
+        // let arr = [5, true, 'line', 3.14];
+        // arr.push('new line');
+        // console.log(arr);
+
+        //Добавление в начало
+        // let arr = [5, true, 'line', 3.14];
+        // arr.unshift('98');
+        // console.log(arr);
+
+        //Удаление последнего элемента
+        // let arr = [5, true, 'line', 3.14];
+        // let val = arr.pop(); //вырезает элемент
+        // arr.unshift(val); //ставит в начало
+        // console.log(arr);
+
+        //Удаление первого элемента
+        // let arr = [5, true, 'line', 3.14];
+        // arr.shift();
+        // console.log(arr);
+
+        //Удаление и добавление в любое место
+        // let arr = [5, true, 'line', 3.14];
+        // console.log(arr);
+        // let deletedElen = arr.splice(1,2);//начиная с первого, удалить два
+        // console.log(deletedElen);
+        // console.log(arr);
+
+        // let arr = [5, true, 'line', 3.14];
+        // console.log(arr);
+        // let deletedElen = arr.splice(1,0,'add',222,'add');//начиная с первого, добавил 'add',222,'add'
+        // console.log(deletedElen);
+        // console.log(arr);
+
+        // let arr = [5, true, 'line', 3.14];
+        // console.log(arr);
+        // let deletedElen = arr.splice(1,1,'add',222,'add');//начиная с первого, удалить 1 и добавил 'add',222,'add'
+        // console.log(deletedElen);
+        // console.log(arr);
+        
+
+
+
+
+
+
+
+
 
         
         

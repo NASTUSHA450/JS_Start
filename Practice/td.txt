@@ -1,0 +1,9 @@
+0. Settings VSC:
+    liveServer
+    material Icon
+    setup GitBash
+    terminal: file/preferences/settings click and find features/terminal
+    find edit in setting.json, click and edit file: addthis row to json
+        "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+
+1. git init, git add .ignore
