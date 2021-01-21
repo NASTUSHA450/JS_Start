@@ -6,4 +6,15 @@
     find edit in setting.json, click and edit file: addthis row to json
         "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
 
-1. git init, git add .ignore
+1. Git 
+    init, git add .ignore
+    ssh-keygen
+    cat /c/Users/Asus/.ssh/id_rsa.pub
+    add this key to the remote repository:
+    ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDbLJRSKwsxQ1ggsbKswRDyDTx8G2R/Qcm2jlqqydpptjZ3M0Kx9Mi4g/ICyD5qy+IiC4oQTXQh9bqwITN7QHDtZ7yLo7R7HpmhbcbpoJz5E/mF7qoOmvi8jEsMCZDUSjKB1pp78iZjcMfLLga3zUoWKMmnABdsOifk/O2O0TH5w8/6ryO2sEfzvCVFTc6OQtMWAKdkDSqnnTni5MMnW62Xe9ijUgWgm3kOnXEEaW6aLupd5qbBcR3XligaxthlVy2fUXXERT6u4ijJJvxxS0F7yBxikQB/zQDsd5H/T6pcOjqodbyESIRP32J+XfctrvzoQ64I/QE35i9X6+EGQED0Df7BO8ubQ5QAA1d6uxnqB7hkO4yhPztKJ8eorjd7StjQN4xceWc/0+oEAdVc9XnpBip14eiguHLwOMqfg2k1Kv+OgXhRMOHU2Ez8XrCrl2xal1kharbsAJY95P25ENP9mufT9ICj1EQmIdvRFFjdq0fqw/AkXfjEPCsSnHdTpVU= Asus@DESKTOP-TRPUHVD 
+
+2. Node
+    npm init
+    npm install
+    npm install -g nodemon
+    npm install pug    
