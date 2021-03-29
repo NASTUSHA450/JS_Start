@@ -1,2 +1,2 @@
 # Java Script step by step
-My step by step journey in Java Script
+My step by step journey in Java Script, Pug and NODEJS
